@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下雪</title>
+	<style type="text/css">
+		#canvas{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script src="canvasDrop.js"></script>
+	<script>
+		init({
+			id:"canvas",
+			type:"rain",
+			speed:[0.4,2.5],
+			size_range:[0.5,1.5],
+			hasBounce:true,
+			wind_direction:-105,
+			hasGravity:false
+		});
+	</script>
+</body>
+</html>

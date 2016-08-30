@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+   
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+    <script type="text/javascript">
+    var canvas = document.getElementById("mycanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.lineWidth = 7;
+
+    ctx.beginPath(); // 开一条新路
+    ctx.moveTo(170, 120);
+
+    var grd=ctx.createLinearGradient(0,0,170,0);
+    grd.addColorStop("0","black");
+    grd.addColorStop("0.3","magenta");
+    grd.addColorStop("0.5","blue");
+    grd.addColorStop("0.6","green");
+    grd.addColorStop("0.8","yellow");
+    grd.addColorStop(1,"red");
+
+    ctx.strokeStyle = grd;
+    ctx.arc(120, 120, 50, 0 ,Math.PI*2);
+    ctx.stroke(); // 画圆
+    function draw(ctx, x) {
+        ctx.clearRect(0, 0, 300, 300);
+        ctx.beginPath();
+        ctx.strokeStyle = grd;//'#ff4444';
+        if (x < Math.PI*2) {
+            x += Math.PI/100;
+        } else {
+            x = 0;
+        }
+        ctx.arc(80, 80, 50, 0, x, false); // 画圆
+        ctx.stroke();
+        requestAnimationFrame(function () {
+            draw(ctx, x);
+        });
+    }
+
+    requestAnimationFrame(function () {
+        draw(ctx1, 0);
+    });
+    </script>
+</body>
+</html>

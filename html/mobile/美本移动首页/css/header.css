@@ -1,0 +1,36 @@
+﻿.title{
+   height:0.88rem;
+   width:100%;
+   background-color: #FF4C06;
+   display: -webkit-box; 
+}
+.city {min-width:1.1rem}
+
+.city a {
+   color:#FFFFFF;
+   padding:0.18rem 0 0  0.22rem;
+   display:inline-block;
+   position:relative;
+}
+.city a:after {
+    content: '';
+    display: inline-block;
+    border-color: #fff transparent transparent transparent;
+    border-width: .1rem;
+	border-style: solid;
+    position: absolute;    
+    top: .36rem;
+    margin-left: .1rem;
+}
+.logo {
+   height:0.88rem;
+   -webkit-box-flex: 1;
+   background: url(../images/logo.png) no-repeat center center;
+   background-size:1.31rem 0.53rem;
+}
+.set {
+   height:0.88rem;
+   min-width:1rem;
+   background: url(../images/set.png) no-repeat center center;
+   background-size:0.38rem 0.3rem;  
+}
