@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	<style type="text/css">
+		#itemContainer li{float:left;list-style:none;}
+		#itemContainer img{width:120px;height:80px;}
+		.holder .jp-current{color:#f00;}
+		.holder a{cursor:pointer;text-decoration:none;color:#000;}
+		.holder a.jp-disabled{color:#999;}
+		
+	</style>
+  <script type="text/javascript" src="js1/jquery-1.8.3.min.js"></script>
+  <script src="js1/addHtml.js"></script>
+  <script type="text/javascript" src="js1/highlight.pack.js"></script> 
+  <script type="text/javascript" src="js1/tabifier.js"></script>
+  <script src="js1/jPages.js"></script>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28718218-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+  <script>
+  /* when document is ready */
+  $(function(){
+
+    /* iniciate jPages without setting any css animation
+     * and setting the fallback fadeIn speed to 500
+     */
+     $(".holder").jPages({
+      containerID : "itemContainer",
+      fallback    : 500
+    });
+
+    
+
+   });
+  </script>
+</head>
+<body>
+	  <!-- navigation holder -->
+      <div class="holder"></div>
+
+      <!-- item container -->
+      <ul id="itemContainer">
+       
+      </ul>
+</body>
+</html>
