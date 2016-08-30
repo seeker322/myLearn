@@ -1,7 +1,11 @@
 try something
 from now,we build up one new branch named dev.
 <<<<<<< HEAD
+<<<<<<< HEAD
 now is on branch master.
+=======
+dev branch has been merge for master. now is feature1.
+>>>>>>> feature1
 =======
 dev branch has been merge for master. now is feature1.
 >>>>>>> feature1
