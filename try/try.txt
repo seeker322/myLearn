@@ -1,2 +1,3 @@
 try something
 from now,we build up one new branch named dev.
+dev branch has been merge for master. now is feature1.
