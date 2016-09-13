@@ -1,0 +1,5 @@
+Apache+Nginx+LightTPD+IIS
+php5.2 php5.3  php5.5 php7.0
+MySQL phpMyAdmin MySQL-Front
+16种组合自由切换，是下面5个版本的合集
+同时支持apache/nginx/Lighttpd和IIS7/8/6

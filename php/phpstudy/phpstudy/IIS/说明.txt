@@ -1,0 +1,2 @@
+IIS+php5.2+php5.3+php 5.4+MySQL
+php一键安装包 for IIS7/8/6 (IIS服务器专用)

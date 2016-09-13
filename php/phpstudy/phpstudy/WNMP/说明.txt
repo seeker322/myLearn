@@ -1,0 +1,2 @@
+Nginx+php5.3+php5.4+MySQL (wnmp集成包)
+nginx+php组合，适合喜欢用nginx的朋友
