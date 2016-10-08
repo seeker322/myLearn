@@ -1,0 +1,78 @@
+body{
+	background: #f0f0f0;
+}
+.folder{
+	position: absolute;
+	top: 0.27rem !important;
+	right: 0.3rem;
+	width: 0.38rem;
+	height: 0.34rem;
+	display: block;
+	background: url(http://s.tiandaoedu.cn/exam/App/View/tiku/images/folder.png) no-repeat center center;
+	background-size: 100% auto;
+}
+.newFolder{
+	width: 4rem;
+	height: 4.5rem;
+	position: fixed;
+	bottom: 0;
+	top:0;
+	left: 0;
+	right: 0;
+	background: #f6f6f6;
+	margin: auto;
+	font-size: 0.3rem;
+}
+.newFolder h5{
+	width: 2.5rem;
+	text-align: center;
+	margin: 1rem auto 0.4rem;
+}
+.newFolder input{
+	width: 2.5rem;
+	height: 0.5rem;
+	display: block;
+	margin: 0 auto;
+	font-size: 0.3rem;
+}
+.newFolder .save-cancle{
+	margin: 0.5rem auto 0;
+	width: 2.5rem;
+}
+.save-cancle span{
+	text-align: center;
+	float: left;
+	width: 1rem;
+	line-height: 0.5rem;
+	border: 1px solid gray;
+}
+.save-cancle .sp1{
+	margin-right: 0.4rem;
+}
+.title>p{
+	display: inline-block;
+	font-size: 0.26rem;
+	line-height: 0.75rem;
+	color: #303030;
+	text-align: center;
+	width: 30%;
+}
+ul li{
+	margin-top: 0.02rem;
+	background: #fff;
+	height: 1rem;
+}
+ul li:nth-last-child(1){
+	display: none;
+}
+li>p{
+	display: inline-block;
+	font-size: 0.26rem;
+	line-height: 1rem;
+	color: #303030;
+	text-align: center;
+	width: 30%;
+}
+li .p1{
+	color: #30ade5;
+}

@@ -1,0 +1,107 @@
+body{
+	background: #f6f6f6;
+}
+.bar .newNoteBtn{
+	position: absolute;
+    top: 0.27rem !important;
+    right: 0.3rem;
+    width: 0.28rem;
+    height: 0.35rem;
+    display: block;
+    background: url(http://s.tiandaoedu.cn/exam/App/View/tiku/images/newNote.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.search{
+	margin: 0.3rem 0;
+}
+.search input{
+	border: none;
+	border-radius: 0.1rem;
+	margin-left: 0.3rem;
+	width: 5.3rem;
+	height: 0.6rem;
+	padding-left: 0.1rem;
+}
+.search .btn{
+	width: 1.3rem;
+	height: 0.6rem;
+	border-radius: 0.1rem;
+	background: #03a9f4;
+	display: inline-block;
+	text-align: center;
+	line-height: 0.6rem;
+	font-size: 0.26rem;
+	color: #ebf7fd;
+}
+.entry{
+	background: #fff;
+	overflow: hidden;	
+}
+.entry li{
+	margin:0.3rem;
+	border-bottom: 0.02rem solid #f6f6f6;
+}
+.entry li:last-child{
+	display: none;
+}
+.entry li .p1{
+	font-size: 0.27rem;
+	line-height: 0.34rem;
+	color: #666;
+	word-wrap:break-word;
+	word-break: normal;
+}
+.entry li .p2{
+ color: #999999;
+ font-size: 0.24rem;
+ margin: 0.2rem 0;
+ position: relative;
+ overflow: hidden;
+}
+.entry li .when{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.entry li .delete{
+	position: absolute;
+	right: 0;
+	
+}
+.pageNubBox{
+	height: 0.8rem;
+}
+.pageNub{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 0.8rem;
+	z-index: 100;
+}
+.pageNub .scroll{
+	width: 2.05rem;
+	height: 0.4rem;
+	margin:0 auto;
+	overflow-x: scroll;
+}
+.pageNub ol{
+	/*height: 0.4rem;*/
+}
+.pageNub ol li{
+	float: left;
+	width: 0.36rem;
+	height: 0.36rem;
+	font-size: 0.24rem;
+	color: #999999;
+	text-align: center;
+	line-height: 0.36rem;
+	margin-left: 0.05rem;
+}
+.pageNub ol li.checked{
+	border-radius: 50%;
+	background: #7cc9ec;
+}

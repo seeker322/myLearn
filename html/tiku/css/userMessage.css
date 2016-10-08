@@ -1,0 +1,36 @@
+body{
+	background: #f6f6f6;
+}
+.content{
+	margin-top: 0.3rem;
+	background: #fff;
+}
+.content li{
+	height: 1.8rem;
+	margin-left: 0.3rem;
+	border-bottom: 0.02rem solid #f6f6f6;
+}
+.headPortrait{
+	width: 1.8rem;
+	height: 1.8rem;
+	background: url(http://s.tiandaoedu.cn/exam/App/View/tiku/images/head-portrait.png) no-repeat left center;
+	background-size: 75% auto;
+	float: left;
+}
+li>span{
+	line-height: 0.85rem;
+}
+.sp1{
+	font-size: 0.3rem;
+	color: #666666;
+}
+.sp2{
+	float: right;
+	margin-right: 0.2rem;
+	font-size: 0.24rem;
+	color: #999999;
+}
+.sp3{
+	font-size: 0.26rem;
+	color: #666666;
+}

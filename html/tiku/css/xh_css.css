@@ -1,0 +1,220 @@
+body,html{
+	font-family:"Microsoft Yahei";
+}
+body{
+	background:#f6f6f6;
+}
+a{
+	text-decoration:none;
+}
+.clearfix{zoom:1;}
+.clearfix:after{display:block; content:'.'; clear:both; line-height:0; visibility:hidden;}
+.button{
+	border-color: transparent;
+	background-color: #f8f8f8;
+	color: #444;
+	position: relative;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	vertical-align: top;
+	text-align: center;
+	text-overflow: ellipsis;
+	color:#fff;
+}
+
+/* 登录页 */
+/* content */
+.xh_box{
+	margin-top:0.3rem;
+	position:static;
+}
+.xh_box .list{
+	margin-top:0.3rem;
+	padding-left: 0.3rem;
+	background:#fff;
+}
+.xh_box .list .item{
+	border:none;
+	height:1rem;
+	padding:0;
+	display:block;
+}
+.xh_box .list .item.xh_item2,.xh_box .xh_zx_list .item{
+	border-top:1px solid #e3e3e3;
+}
+.xh_box .list .item input{
+	font-size:0.3rem;
+	height:inherit;
+	font-family:"Microsoft Yahei";
+	width:100%;
+	border:none;
+}
+.xh_zx_list .xh_item1, .xh_zx_list .xh_item2{
+	position:relative;
+}
+.xh_zx_list .xh_item1 em,.xh_zx_list .xh_item2 em{
+	position:absolute;
+	right:0.3rem;
+	top: 0.4rem;
+    display: block;
+    width: 0.3rem;
+    height: 0.31rem;
+	background:url(http://s.tiandaoedu.cn/exam/App/View/tiku/images/f.png) no-repeat center bottom;
+	background-size:100% auto;
+	display:none;
+}
+.xh_zx_list .xh_item1 em.wrong,.xh_zx_list .xh_item2 em.wrong{
+    width: 0.3rem;
+    height: 0.31rem;
+	background:url(http://s.tiandaoedu.cn/exam/App/View/tiku/images/f.png) no-repeat 0 0;
+	background-size:100% auto;
+}
+.xh_box input::-webkit-input-placeholder { /* WebKit browsers */
+    color:#bdbdbd;
+}
+.xh_box input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#bdbdbd;
+}
+.xh_box input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#bdbdbd;
+}
+.xh_box input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#bdbdbd;
+}
+/* 登录btn */
+.xh_btn{
+	background:#f59f0a!important;
+	line-height:0.8rem;
+	font-size:0.34rem;
+	width:91.666%;
+	margin:0.48rem auto;
+	display:block;
+	padding:0;
+	font-family:"Microsoft Yahei";
+}
+.xh_btn.disNone{
+	background:#999!important;
+}
+/*  */
+.xh_list1 li a{
+	float:left;
+	width:49%;
+	display:inline-block;
+	color:#5bc2f1;
+	font-size:0.26rem;
+	text-align:center;
+	line-height:0.3rem;
+	text-decoration:none;
+}
+.xh_list1 li:first-child a{
+	border-right:1px solid #e3e3e3;
+}
+/* footer */
+.xh_footer{
+	height:3.08rem;
+	flex-flow:column;
+	padding:0;
+	background:none;
+	position:static;
+	margin-top:3rem;
+}
+.xh_list2,.xh_ks{
+	width:100%;
+}
+.xh_list2{
+	margin-top:0.2rem;
+}
+.xh_list2 a{
+	display:block;
+	font-size:0.24rem;
+	color:#666;
+}
+.xh_list2 a p{
+	line-height:0.6rem;
+}
+.xh_list2 li{
+	display:block;
+	width:33.3%;
+	float:left;
+	text-align:center;
+}
+.xh_list2 a img{
+	width:1.1rem;
+	height:1.1rem;
+}
+.xh_ks{
+	color:#666;
+	font-size:0.26rem;
+	text-align:center;
+	height:1rem;
+	line-height:1rem;
+	position:relative;
+}
+.xh_ks span{
+	height:1px;
+	background:#e3e3e3;
+	width:2.5rem;
+	float:left;
+	position:absolute;
+	top:0.5rem;
+	right:0;
+}
+.xh_ks span:first-child{
+	left:0;
+	top:0.5rem;
+}
+/* 注册页 */
+.xh_zx_list .item.xh_item1{
+	border-top:none;
+}
+.xh_xy{
+	padding:0 0.3rem;
+	font-size:0.24rem;
+	color:#666;
+	line-height:1rem;
+}
+.xh_xy input{
+	margin-right: 5px;
+	width: 0.3rem;
+	height: 0.3rem;
+	position: relative;
+	top: 4px;
+}
+.xh_btn_res{
+	margin:0rem auto;
+}
+.xh_get{
+	background:#03a9f4!important;
+	font-size:0.26rem;
+	margin-right:0.3rem;
+	width:2.5rem;
+	font-family:"Microsoft Yahei";
+	padding:0;
+	min-height:inherit;
+	line-height:0.62rem;
+	position:absolute;
+	top:0.18rem;
+	right:0;
+}
+.xh_yzLable{
+	position:relative;
+}
+.xh_sccce{
+	width:3.3rem;
+	height:1.2rem;	
+	position:fixed;
+	left:27.08333%;
+	top:20%;
+	border-radius:10px;
+	background:#000;
+	color:#fff;
+	font-size:0.3rem;
+	font-family:"Microsoft Yahei";
+	line-height:1.2rem;
+	text-align:center;
+	display:none;
+}
+.xh_btn_login{
+	margin-top:0.48rem;
+}

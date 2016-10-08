@@ -1,0 +1,101 @@
+body{
+	background: #f6f6f6;
+}
+ul{
+
+}
+ul li{
+	height: 1rem;
+	background: #fff;
+}
+ul li:nth-child(1){
+	margin: 0.3rem 0;
+}
+ul li:nth-child(5){
+	margin: 0.3rem 0;
+	position: relative;
+}
+ul li:nth-child(5) .complete{
+	width: 3.3rem;
+	height: 1.2rem;
+	background: #333333;
+	border-radius: 0.2rem;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin:-0.3rem auto 0;
+	color: #fff;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 1.2rem;
+	display: none;
+}
+ul li>span{
+	margin-left: 0.3rem;
+	font-size: 0.3rem;
+	color: #303030;
+	line-height: 1rem;
+}
+li>span span{
+	float: right;
+	margin-right: 0.3rem;
+	color: #666666;
+}
+li>span img{
+	width: 0.12rem;
+	float: right;
+	margin-right: 0.3rem;
+	margin-top: 0.45rem;
+}
+.borderBottom{
+	width: 0.3rem;
+	height: 0.02rem;
+	background: #fff;
+}
+span.sp1{
+	width: 0.94rem;
+    height: 0.48rem;
+    border-radius: 0.42rem;
+    border: 1px solid #e3e3e3;
+    float: right;
+    margin-top: 12px;
+}
+span.sp1.on{
+	background: #4ad462;
+}
+span.sp1 em{
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    background: #e3e3e3;
+    border-radius: 0.36rem;
+    margin-top: 0.01rem;
+    margin-right: 0.01rem;
+}
+span.sp1 em.on{
+	background: #fff;
+}
+span.sp3 em{
+	margin:0 0.2rem;
+	display:block;
+	font-size:0.24rem;
+	color:#cdcdcd;
+}
+span.sp3 i{
+	display:inline-block;
+	width:0.3rem;
+	height:0.3rem;
+	border:1px solid #e3e3e3;
+	border-radius:0.3rem;
+	position: relative;
+    top: 5px;
+    right: 5px;
+    box-sizing: border-box;
+}
+span.sp3 em.on i{
+	border: none;
+    background: url(http://s.tiandaoedu.cn/exam/App/View/tiku/images/f.png) no-repeat center bottom;
+    background-size: 100% auto;
+}
