@@ -1,0 +1,269 @@
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table, th, td {
+	margin : 0;
+	padding : 0;
+}
+body, button, input, select, textarea {
+	font : 12px / 24px "Hiragino Sans GB",
+	"Hiragino Sans GB W3",
+	"Microsoft YaHei",
+	"微软雅黑",
+	simsun,
+	"宋体",
+	tahoma,
+	arial;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+address, cite, em, i {
+	font-style:normal;
+}
+small {
+	font-size : 12px;
+}
+li {
+	list-style : none;
+}
+a {
+	text-decoration : none;
+	-webkit-tap-highlight-color : rgba(0, 0, 0, 0);
+	-webkit-appearance : none;
+	-moz-tap-highlight-color : rgba(0, 0, 0, 0);
+	-moz-appearance : none;
+	-o-tap-highlight-color : rgba(0, 0, 0, 0);
+	-o-appearance : none;
+	-ms-tap-highlight-color : rgba(0, 0, 0, 0);
+	-ms-appearance : none;
+	tap-highlight-color : rgba(0, 0, 0, 0);
+	appearance : none;
+	cursor:pointer;
+}
+a : hover {
+	text-decoration : underline;
+}
+legend {
+	color :  # 000;
+}
+fieldset, img {
+	border : 0;
+}
+button, input, select, textarea {
+	font-size : 100 % ;
+	line-height : normal;
+}
+table {
+	/* border-collapse : collapse;
+	border-spacing : 0; */
+}
+input[type="button"], input[type = "submit"], input[type = "reset"], a {
+	cursor : pointer;
+}
+a, input {
+	outline : none;
+}
+.clearfix:after{display:block; zoom:1;content:'.'; clear:both; line-height:0; visibility:hidden;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.p20{padding-top:20px;}
+.fl{float:left}
+.fr{float:right;}
+.tl{text-align:left;}
+.tr{text-align:right}
+.tc{text-align:center;}
+.green{
+	color:#40c69e!important;
+}
+.hide{
+	display:none;
+}
+body{
+	font-family:"微软雅黑";
+	/* background:#eee; */
+}
+li{
+	list-style:none;
+}
+/* icon */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-angle-left:before {
+  content: "\f104";
+}
+.fa-angle-right:before {
+  content: "\f105";
+}
+.fa-heart:before {
+  content: "\f004";
+}
+.fa-repeat:before {
+  content: "\f01e";
+}
+.fa-star:before {
+  content: "\f005";
+}
+.fa-check-circle:before {
+  content: "\f058";
+}
+.fa-check:before {
+  content: "\f00c";
+}
+.fa-check-circle:before {
+  content: "\f058";
+}
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+.fa-eye:before {
+    content: "\f06e";
+}
+.fa-edit:before, .fa-pencil-square-o:before {
+    content: "\f044";
+}
+.fa-share-alt:before {
+    content: "\f1e0";
+}
+.fa-star-o:before {
+    content: "\f006";
+}
+.fa-angle-up:before {
+    content: "\f106";
+}
+.fa-angle-down:before {
+    content: "\f107";
+}
+.fa-search:before {
+    content: "\f002";
+}
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+/* header */
+.header{
+    width:100%;
+    z-index:99999;
+    height:43px;
+    background:#1bb5fb;
+	position:fixed;
+}
+.header h2{
+	width:100%;
+	text-align: center;
+	color: #fff;
+	position:relative;
+	line-height:43px;
+	font-size:1.4em;
+	font-family:"微软雅黑";
+	float:left;
+}
+.header a:first-child {
+    font-size: 3em;
+    position: absolute;
+    left:0;
+    top: -2px;
+    z-index: 99;
+    color: #fff;
+    height: 43px;
+    line-height: 1.5em;
+    width: 30px;
+}
+.header  a:first-child{
+	display: block;
+	width: 30px;
+	height: 100%;
+	background: url(../images/back.png) no-repeat center 15px;
+	background-size: 10px auto;
+	margin-left:1px;
+}
+.h43{height:43px;}
+/*	3. Preloader  */ 
+
+#preloader {
+	position:fixed;
+	z-index:2500;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#FFF; 
+	z-index:99999999; 
+}
+
+#status {
+	position:fixed;
+	z-index:99999999;
+	width:250px;
+	height:250px;
+	position:absolute;
+	left:50%; 
+	top:50%; 
+	background-image:url(../images/Loading1.gif); 
+	background-size:64px 64px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-125px 0 0 -125px; 
+}
+
+#status p{
+	margin-top:60%;
+}
+
+#status em{
+	font-size:10px!important;
+	display:block;
+	font-style:normal;
+}
+.center-text{	
+	display:block; 
+	text-align:center;
+}
+
+@media(min-width:768px){
+	.bdshare-button-style1-32 a{
+		background-size: 22% auto!important;
+	}
+}
+::-webkit-scrollbar { 
+   /* display: none; */
+}
+/* 美化进度条 */
+::-webkit-scrollbar {  
+  width: 0px;  
+  height: 0px;  
+}  
+
+::-webkit-scrollbar-track,  
+::-webkit-scrollbar-thumb {  
+  border-radius: 999px;  
+  border: 0px solid transparent;  
+}  
+::-webkit-scrollbar-track {  
+  box-shadow: 1px 1px 5px rgba(0,0,0,1) inset;  
+}  
+
+::-webkit-scrollbar-thumb {  
+  min-height: 20px;  
+  background-clip: content-box;  
+  box-shadow: 0 0 0 5px rgba(0,0,0,1) inset;  
+}  
+
+::-webkit-scrollbar-corner {  
+  background: transparent;  
+}
