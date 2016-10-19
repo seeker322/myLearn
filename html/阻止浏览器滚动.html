@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js/javascript禁止滚动条滚动事件</title>
+</head>
+      
+<body>
+<script>
+window.onload = function() {
+    // 创建换行，让body足够高
+    for (i = 0; i < 500; i++) { 
+        var x = document.createElement('div');
+        x.height=600;
+        x.innerHTML = "换行<br/>";
+        document.body.appendChild(x);
+    }
+    // 用于获取对象(不明白原作者这么做的目的)
+    function $(x) {             
+        return document.getElementById(x);
+    };
+    $("wrap").onmousewheel = function scrollWheel(e) {
+        var sl;
+        e = e || window.event;
+        if (navigator.userAgent.toLowerCase().indexOf('msie') >= 0) {
+            event.returnValue = false;
+        } else {
+            e.preventDefault();
+        };
+        if (e.wheelDelta) {
+            sl = e.wheelDelta;
+        } else if (e.detail) {
+            sl = -e.detail;
+        };
+        if (sl < 0) {
+            var x = parseInt($("he").innerHTML);
+            x++;
+            $("he").innerHTML = x;
+        } else {
+            var x = parseInt($("he").innerHTML);
+            x--;
+            $("he").innerHTML = x;
+        };
+    };
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') >= 0) {
+        //firefox支持onmousewheel
+        addEventListener('DOMMouseScroll',
+        function(e) {
+            var obj = e.target;
+            var onmousewheel;
+            while (obj) {
+                onmousewheel = obj.getAttribute('onmousewheel') || obj.onmousewheel;
+                if (onmousewheel) break;
+                if (obj.tagName == 'BODY') break;
+                obj = obj.parentNode;
+            };
+            if (onmousewheel) {
+                if (e.preventDefault) e.preventDefault();
+                e.returnValue = false; //禁止页面滚动
+                if (typeof obj.onmousewheel != 'function') {
+                    //将onmousewheel转换成function
+                    eval('window._tmpFun = function(event){' + onmousewheel + '}');
+                    obj.onmousewheel = window._tmpFun;
+                    window._tmpFun = null;
+                };
+                // 不直接执行是因为若onmousewheel(e)运行时间较长的话，会导致锁定滚动失效，使用setTimeout可避免
+                setTimeout(function() {
+                    obj.onmousewheel(e);
+                },100);
+            };
+        },
+        false);
+    };
+}
+</script>
+<div id="wrap" style="position:absolute;left:100px;top:0px;background:#ccc;width:300px;height:300px;">
+    <h1 id="he" style="text-align:center;width:100%;color:#f00;">0</h1>
+     鼠标移动这里，转动滚轮，尽情的调戏吧！
+     鼠标移出这里，转动滚轮，看看它的反应！
+</div>
+</body>
+</html>
