@@ -1,8 +1,10 @@
-  function getStyle(obj,attr){
-    if(obj.currentStyle){//兼容IEcurrentStyle和getComputedStyle两个返回的都是一个对象
-        return obj.currentStyle[attr];
-    }
-    else {
-        return getComputedStyle(obj,false)[attr];
-    }
+function getStyle(obj,attr,boolean){
+	// boolean 没搞清楚是什么作用，懒得查了
+	var bollean=bollean||false,
+		attr=attr||undefined;
+	if(attr){
+		return  obj.currentStyle?obj.currentStyle[attr]:getComputedStyle(obj,bollean)[attr];
+	}else{
+		return  obj.currentStyle?obj.currentStyle:getComputedStyle(obj,bollean);
+	}
 }
