@@ -1,1 +1,1 @@
-learn to be one regular front end programer,conme on.
+learn to be one regular front end programer,come on.
