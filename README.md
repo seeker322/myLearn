@@ -1,1 +1,1 @@
-my learn of anything
+learn to be one regular front end programer,come on.
