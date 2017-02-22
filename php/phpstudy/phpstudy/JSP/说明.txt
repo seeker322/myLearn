@@ -1,2 +1,0 @@
-JDK+tomcat+Apache+mysql+php
-纯绿色解压即可,不添加环境变量，不修改注册表
